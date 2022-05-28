@@ -1,6 +1,6 @@
 import Head from "next/head";
 import type { NextPage } from "next";
-import { Center, createStyles, Text } from "@mantine/core";
+import { Center, createStyles, Text, Navbar } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
   container: {
@@ -16,14 +16,16 @@ const useStyles = createStyles((theme) => ({
 const Home: NextPage = () => {
   const { classes } = useStyles();
 
+  // can move navbar line to the right but cant to the left???
   return (
     <>
       <Head>
         <title>nymchat</title>
       </Head>
-
       <Center className={classes.container}>
-        <Text className={classes.text}>Welcome to nymchat</Text>
+        <Navbar height={800} p="xs" width={{ base: 1 }}> 
+        </Navbar>
+      <Text className={classes.text}>Test</Text>
       </Center>
     </>
   );
