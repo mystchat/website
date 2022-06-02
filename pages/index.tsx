@@ -16,16 +16,13 @@ const useStyles = createStyles((theme) => ({
 const Home: NextPage = () => {
   const { classes } = useStyles();
 
-  // can move navbar line to the right but cant to the left???
   return (
     <>
       <Head>
         <title>nymchat</title>
       </Head>
       <Center className={classes.container}>
-        <Navbar height={800} p="xs" width={{ base: 1 }}> 
-        </Navbar>
-      <Text className={classes.text}>Test</Text>
+      <Text className={classes.text}>Nymchat</Text>
       </Center>
     </>
   );
