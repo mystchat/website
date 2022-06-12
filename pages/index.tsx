@@ -9,7 +9,14 @@ const useStyles = createStyles((theme) => ({
   text: {
     fontWeight: "bold",
     fontSize: 40,
+    fontStyle: "normal",
     color: theme.colors.gray[6],
+    
+    marginTop: 20,
+    //marginRight: 20,
+    marginBottom: 20,
+    marginLeft: 100,
+    
   },
 }));
 
@@ -21,9 +28,8 @@ const Home: NextPage = () => {
       <Head>
         <title>nymchat</title>
       </Head>
-      <Center className={classes.container}>
-      <Text className={classes.text}>Nymchat</Text>
-      </Center>
+      <Text className={classes.text}>nymchat</Text>
+      <hr color="#2C2E33"></hr>
     </>
   );
 };
