@@ -1,12 +1,12 @@
-import { NextPage } from "next"
+import { NextPage } from "next";
+import Layout from "../../components/layout";
 
-// subpage where all the magic happens
 const Panel: NextPage = () => {
-    return (
-        <>
-        <h1>Panel</h1>
-        </>
-    )
-}
+  return (
+    <Layout>
+      <h1>Panel</h1>
+    </Layout>
+  );
+};
 
-export default Panel; 
+export default Panel;

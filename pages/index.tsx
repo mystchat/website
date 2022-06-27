@@ -9,7 +9,9 @@ const Home: NextPage = () => {
         <title>nymchat</title>
       </Head>
 
-      <Layout>hello world</Layout>
+      <Layout>
+        <h1>Home</h1>
+      </Layout>
     </>
   );
 };
